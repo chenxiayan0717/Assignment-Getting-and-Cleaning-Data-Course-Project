@@ -59,6 +59,3 @@ colnames(combined_data)[1]<- 'Subject'
 tidy_data <- combined_data %>%
   group_by(Subject, ActivityName) %>%
   summarise(across(everything(), mean, na.rm = TRUE))
-
-
-
