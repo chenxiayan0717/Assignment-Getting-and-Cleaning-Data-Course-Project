@@ -1,0 +1,37 @@
+---
+title: "README"
+author: "xiayan"
+date: "2024-02-28"
+output: html_document
+---
+
+## R Markdown
+
+##Human Activity Recognition Analysis
+###Project Overview
+This project focuses on the analysis of the Human Activity Recognition dataset, which contains data collected from accelerometers and gyroscopes of the Samsung Galaxy S smartphone. The goal is to prepare tidy data that can be used for later analysis. This involves merging training and test sets, extracting measurements on the mean and standard deviation for each measurement, using descriptive activity names, and appropriately labeling the dataset with descriptive variable names. Finally, a second, independent tidy data set with the average of each variable for each activity and each subject is created.
+
+###Data Source
+The dataset is obtained from the UCI Machine Learning Repository. A full description is available at the site where the data was obtained: Human Activity Recognition Using Smartphones Data Set.
+
+You can download the dataset directly from: Dataset Download Link.
+
+###Files in the Repository
+README.md: Provides an overview of the project and how to run the analysis.
+CodeBook.md: Describes the variables, the data, and any transformations or work that was performed to clean up the data.
+run_analysis.R: The R script that performs the data preparation and then followed by the 5 steps described in the project's definition.
+###How to Run the Analysis
+To run this analysis, you will need R installed on your computer (RStudio is recommended for ease of use). Follow these steps:
+
+Download the dataset and unzip it in your working directory.
+Place the run_analysis.R script in your working directory.
+Open RStudio and set your working directory using setwd() function to the location where you have the script and dataset.
+Source the script using the command source("run_analysis.R").
+The script will automatically perform the analysis and create a tidy dataset file named tidy_data.txt in your working directory.
+###Environment Requirements
+This analysis was performed using R version 4.0.2. The following R packages are required to run the script:
+
+dplyr
+readr
+tidyr
+You can install these packages using install.packages() function in R.
